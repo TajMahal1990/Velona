@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_splash"
+    android:background="#0D1621">
+
+    <!-- Логотип (обязательно добавьте android:id) -->
+
+    <!-- Заголовок (обязательно добавьте android:id) -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="319dp"
+        android:layout_height="268dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-60dp"
+        android:contentDescription="@string/app_logo_des"
+        android:src="@drawable/velona1" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+
+        android:fontFamily="@font/aboreto"
+        android:text="@string/app_logo_des"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+</FrameLayout>
