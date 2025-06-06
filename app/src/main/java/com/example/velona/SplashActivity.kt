@@ -26,6 +26,7 @@ class SplashActivity : AppCompatActivity() {
         val logo = findViewById<ImageView>(R.id.logo)
         val title = findViewById<TextView>(R.id.title)
 
+
         // Начальное состояние (обе элементы - точки)
         logo.scaleX = 0.1f
         logo.scaleY = 0.1f
@@ -66,4 +67,5 @@ class SplashActivity : AppCompatActivity() {
             }
             .start()
     }
+
 }

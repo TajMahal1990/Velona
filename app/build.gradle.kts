@@ -35,6 +35,9 @@ android {
     }
 }
 
+
+
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -45,4 +48,28 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // implementation("com.walletconnect:android-core:2.14.0")
+    implementation("com.walletconnect:sign:2.14.0")
+
+    implementation("com.walletconnect:android-core:2.14.0") {
+        exclude(group = "com.squareup.okhttp3") // Решает возможные конфликты
+    }
+
+
+    implementation("com.walletconnect:web3modal:2.14.0")
+
+
+
+    // Coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+    // Lifecycle components
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation("com.reown:android-core:2.X.X")
+
+
+
 }

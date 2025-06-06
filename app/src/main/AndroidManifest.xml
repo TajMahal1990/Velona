@@ -12,22 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Velona"
         tools:targetApi="31">
-
-        <!-- SplashActivity без кастомной темы -->
         <activity
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".PersonalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" /> <!-- SplashActivity без кастомной темы -->
+        <activity
             android:name=".SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity -->
+        </activity> <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

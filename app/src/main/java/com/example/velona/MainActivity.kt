@@ -1,6 +1,7 @@
 package com.example.velona
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -35,6 +36,8 @@ class MainActivity : AppCompatActivity() {
         subtitleText = findViewById(R.id.subtitle)
         logoImage = findViewById(R.id.logoImage)
 
+
+
         // Обновим текст (если нужно)
         titleText.text = "VELONA"
         subtitleText.text = "Welcome to Web 3 messenger"
@@ -52,8 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         guestButton.setOnClickListener {
-            Toast.makeText(this, "Continuing as Guest", Toast.LENGTH_SHORT).show()
-            exploreAsGuest()
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
         logoImage.setOnClickListener {
